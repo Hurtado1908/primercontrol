@@ -1,0 +1,286 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://wallpaperxyz.com/wp-content/uploads/Gif-Animated-Wallpaper-Background-Full-HD-Free-Download-for-PC-Macbook-261121-Wallpaperxyz.com-46.gif);
+    background-size: 1920px 1080px;;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; 
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+.container {
+    padding-top: 1000px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%;
+}
+
+.welcome-section {
+    padding: 20px;
+    color: #333;
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 70px;
+    justify-content: space-around;
+}
+
+.welcome-section h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-top: 0px;
+}
+
+.welcome-content .text-content {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.welcome-content .text-content p {
+    margin: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.welcome-content .image-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.welcome-content .welcome-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inicio-section {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Color blanco con 90% de opacidad */
+    color: #333;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.inicio-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    size: 50%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-image {
+    size: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .text-content {
+        flex: 1;
+        margin-right: 40px;
+    }
+
+    .image-content {
+        flex: 1;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+}
+
+main {
+    padding: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.productos, .acerca, .productos-lista, .contacto {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; /* Puedes usar también 'space-between' o 'center' */
+    flex-wrap: wrap;
+}
+.titulo {
+    text-align: center;
+    margin-bottom: 20px; /* Ajusta este valor para que el título se posicione más cerca o más lejos de los productos */
+}
+.producto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    flex: 1 1 20%;
+    margin: 0px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%; /* Esto hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 200px; /* Puedes ajustar este valor para establecer un tamaño máximo */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor, recortando si es necesario */
+    display: block; /* Asegura que no haya espacio debajo de la imagen */
+    margin: 0 auto;
+}
+
+.producto h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.producto p {
+    position: relative;
+    align-content: center;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    margin-top: 0.5rem;
+}
+
+.contacto input, .contacto textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contacto button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background-color: #555;
+}
+
+.footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0;
+    left: 10;
+    align-content: flex-end; 
+    padding-top: 12px;
+    
+}
